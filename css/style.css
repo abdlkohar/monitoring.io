@@ -5,11 +5,12 @@ body {
 
 .container {
 	
-	background-attachment: fixed;
+	
 	background-size: cover;
 	background-position: 1200px;
 	color: #eaeaea;
 	padding-top: 3rem;
+
 	
 }
 

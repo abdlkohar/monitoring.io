@@ -12,42 +12,43 @@
     <title>Monitoring | QC Metal</title>
   </head>
   <body>
-
-
-      <div class="container" >
-        <div class="row text-center mb-3">
+      <h2 class="text-center mt-5 mb-3">Monitoring Produk Metal</h2>
+     
+   
+      <div class="container mt-3" >
+        <div class="row text-center mt-3">
           <div class="col">
-            <h2>Monitoring Produk Metal</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
+        <div class="row justify-content">
+          <div class="col-md-5">
            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                <strong>Berhasil!</strong> Pesan telah terkirim.
+                <strong>Sukses!</strong> Laporan Berhasil di input.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
-            <form name="portfolio-form-contact" >
+            <form name="metal-form-input" >
+              <label for="nama">Nama</label>
+              <input type="text" name="Nama" placeholder="Masukkan Nama/Shif">
             <div class="mb-3">
-
               <label for="boq" class="form-label" >BOQ</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Masukkan BOQ"/>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="BOQ" placeholder="Masukkan BOQ"/>
             </div>
              <div class="mb-3">
               <label for="prdk" class="form-label" >Nama Produk</label>
-               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Masukkan Nama Produk"/>
+               <input type="text" class="form-control" id="name" aria-describedby="name" name="Produk" placeholder="Masukkan Nama Produk"/>
             </div>
              <div class="mb-3">
               <label for="com" class="form-label">Componen</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email"/>
+              <input type="text" class="form-control" id="text" aria-describedby="text" name="Componen" placeholder="Componen Produk" />
             </div>
-            <div class="mb-3">
-              <label for="ok" class="form-label">OK</label>
-               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Masukkan Hasil Pengecekkann"/>
+               <div class="mb-3">
+              <label for="com" class="form-label">QTY</label>
+              <input type="text" class="form-control" id="text" aria-describedby="text" name="Qty" placeholder="Hasil Pengecekkan" />
             </div>
              
             <div class="mb-3">
              <label for="ket" class="form-label">Keterangan</label>
-              <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              <textarea class="form-control" id="pesan" rows="3" name="Keterangan" placeholder=""></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
 
@@ -115,8 +116,8 @@
 
 
     <script>
-      const scriptURL = ''
-      const form = document.forms['portfolio-form-contact'];
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzyV75wRRtq_JXTBGWE_3dtQZFrkwn3xrTf5Z6a78jPrIEqaKa71o2aSuDO4jdRIH_Y/exec';
+      const form = document.forms['metal-form-input'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
